@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TV Show Project</title>
     <link href="style.css" rel="stylesheet" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-
-</head>
-<body>
+  </head>
+  <body>
     <div id="root">
-        <header>
-            <h1>TV Show Episode Explorer</h1>
-            <input type="text" id="searchInput" placeholder="Search episodes..." />
-            <select id="episodeSelect">
-                <option value="">All Episodes</option>
-            </select>
-            <p id="displayCount"></p>
-        </header>
-        <div id="episodeContainer"></div>
-        <footer>
-            Data originally from <a href="https://www.tvmaze.com/">TVMaze.com</a>. Please see their <a href="https://www.tvmaze.com/api#licensing">API Licensing</a> for more information.
-        </footer>
+      <header>
+        <h1>TV Show Episode Explorer</h1>
+        <select id="showSelect">
+          <option value="">All Shows</option>
+        </select>
+        <input type="text" id="searchInput" placeholder="Search shows..." />
+        <select id="episodeSelect" class="hidden">
+          <option value="">All Episodes</option>
+        </select>
+        <p id="displayCount"></p>
+      </header>
+      <div id="allShowsContainer"></div>
+      <div id="contentContainer"></div>
+      <footer>
+        Data originally from <a href="https://www.tvmaze.com/">TVMaze.com</a>.
+        Please see their
+        <a href="https://www.tvmaze.com/api#licensing">API Licensing</a> for
+        more information.
+      </footer>
     </div>
-
-    
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
